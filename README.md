@@ -19,3 +19,9 @@ from sqlalchemy import create_engine, text
 ```
 <br>
 Uma vez utilizados o comando pip install, não é necessário utilizá-los novamente caso o código esteja rodando em sua máquina diretamente.
+<br></br>
+Para ler o primeiro arquivo em python no repositório, utilize o comando
+
+```
+import app.py
+```
