@@ -132,7 +132,6 @@
       const criancas = document.getElementById('criancas').value;
 
       if (nome && resposta && adultos && criancas) {
-        // Exibir o elemento de carregamento
         document.getElementById('loading-container').style.display = 'block';
 
         const telefone = document.getElementById('telefone').value;
@@ -145,7 +144,7 @@
           'criancas': criancas,
           'telefone': telefone,
           'observacoes': observacoes,
-          'acompanhantes': [] // Array para armazenar os nomes dos acompanhantes
+          'acompanhantes': []
         };
 
         // Capturar os valores dos campos de nome extra
@@ -178,7 +177,6 @@
               avisoElemento.style.color = '#20124d';
             }
 
-            // Ocultar o elemento de carregamento
             document.getElementById('loading-container').style.display = 'none';
           })
           .catch(error => {
@@ -186,7 +184,6 @@
             avisoElemento.textContent = 'Presença confirmada com sucesso!';
             avisoElemento.style.color = '#20124d';
 
-            // Ocultar o elemento de carregamento
             document.getElementById('loading-container').style.display = 'none';
           });
       } else {
@@ -194,7 +191,6 @@
         avisoElemento.textContent = 'Preencha os campos obrigatórios.';
         avisoElemento.style.color = 'red';
 
-        // Ocultar o elemento de carregamento
         document.getElementById('loading-container').style.display = 'none';
       }
     }
