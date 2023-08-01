@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Página de Cadastro</title>
@@ -24,8 +25,13 @@
     }
 
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .loading-container {
@@ -62,8 +68,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%)
-      width 10px;
+      transform: translate(-50%, -50%) width 10px;
       height: 10px;
       background-color: #FFFFFF;
       border-radius: 50%;
@@ -196,13 +201,17 @@
     }
   </script>
 </head>
+
 <body>
   <form id="formulario" style="position: relative;">
     <label for="nome"><strong>Nome Completo</strong></label><span style="color: red;"><strong>*</strong></span><br>
-    <input type="search" id="nome" name="nome" required style="width: 300px; padding: 3px; background-color: transparent; border-color: #20124d; border-width: 1px; border-radius: 5px; width: 270px;" placeholder="Insira seu nome completo"><br>
+    <input type="search" id="nome" name="nome" required
+      style="width: 300px; padding: 3px; background-color: transparent; border-color: #20124d; border-width: 1px; border-radius: 5px; width: 270px;"
+      placeholder="Insira seu nome completo"><br>
     <br></br>
 
-    <label for="resposta"><strong>Você irá ao evento?</strong></label><span style="color: red;"><strong>*</strong></span>
+    <label for="resposta"><strong>Você irá ao evento?</strong></label><span
+      style="color: red;"><strong>*</strong></span>
     <input type="radio" name="resposta" value="sim" required class="radio-button">
     <label for="resposta-sim" id="resposta-sim"><strong>Sim</strong></label>
 
@@ -210,8 +219,10 @@
     <label for="resposta-nao" id="resposta-nao"><strong>Não</strong></label><br>
     <br></br>
 
-    <label for="adultos"><strong>Quantidade de adultos:</strong><span style="color: red;"><strong>*</strong></span></label>
-    <select id="adultos" name="adultos" required style="border: none; border-radius: 5px; background-color: transparent;" onchange="criarCamposNomeExtra()">
+    <label for="adultos"><strong>Quantidade de adultos:</strong><span
+        style="color: red;"><strong>*</strong></span></label>
+    <select id="adultos" name="adultos" required
+      style="border: none; border-radius: 5px; background-color: transparent;" onchange="criarCamposNomeExtra()">
       <option value="">Selecione</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -224,8 +235,10 @@
 
     <div id="campos-nome-extra"></div><br>
 
-    <label for="criancas"><strong>Quantidade de crianças:</strong><span style="color: red;"><strong>*</strong></span></label>
-    <select id="criancas" name="criancas" required style="border: none; border-radius: 5px; background-color: transparent;">
+    <label for="criancas"><strong>Quantidade de crianças:</strong><span
+        style="color: red;"><strong>*</strong></span></label>
+    <select id="criancas" name="criancas" required
+      style="border: none; border-radius: 5px; background-color: transparent;">
       <option value="">Selecione</option>
       <option value="0">0</option>
       <option value="1">1</option>
@@ -237,13 +250,16 @@
     <br></br>
 
     <label for="telefone"><strong>Telefone para contato</strong></label><br>
-    <input type="tel" id="telefone" name="telefone" maxlength="15" style="padding: 3px; background-color: transparent; border-color: #20124d; border-width: 1px; border-radius: 5px; width: 150px;"  placeholder="(99) 99999-9999" oninput="formatarTelefone(this)"><br>
+    <input type="tel" id="telefone" name="telefone" maxlength="15"
+      style="padding: 3px; background-color: transparent; border-color: #20124d; border-width: 1px; border-radius: 5px; width: 150px;"
+      placeholder="(99) 99999-9999" oninput="formatarTelefone(this)"><br>
     <br></br>
 
     <label for="obs" style="vertical-align:top;"><strong>Observações</strong></label><br>
-    <textarea id="obs" name="obs" rows="6" cols="33" style="padding: 5px; background-color: transparent; border-color: #20124d; border-radius: 5px;"></textarea><br>
+    <textarea id="obs" name="obs" rows="6" cols="33"
+      style="padding: 5px; background-color: transparent; border-color: #20124d; border-radius: 5px;"></textarea><br>
     <br></br>
-    
+
     <span style="color: red;"><strong>*</strong></span>
     <span style="color: black;">Campo obrigatório</span><br>
     <br></br>
@@ -270,4 +286,5 @@
     <span id="aviso"></span>
   </form>
 </body>
+
 </html>
